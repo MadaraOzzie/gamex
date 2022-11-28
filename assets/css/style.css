@@ -2,8 +2,10 @@
   #style.css
 \*-----------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Quicksand:wght@700&display=swap');
+
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2022 @Xhenzu232
  */
 
 
@@ -27,9 +29,12 @@
   --light-gray: hsl(0, 0%, 80%);
   --platinum: hsl(0, 4%, 91%);
   --xiketic: hsl(275, 24%, 10%);
-  --orange: hsl(31, 100%, 51%);
+  --orange-az: hsl(13, 78%, 54%);
   --white: hsl(0, 0%, 100%);
   --onyx: hsl(240, 5%, 26%);
+  --red-az: hsl(5, 81%, 54%);
+  --lightblue-az: hsl(198, 48%, 76%);
+  --darkerblue-az: hsl(200, 46%, 51%);
 
   /**
    * typography
@@ -129,10 +134,10 @@ body.active { overflow-y: hidden; }
 
 ::-webkit-scrollbar { width: 8px; }
 
-::-webkit-scrollbar-track { background: var(--raisin-black-2); }
+::-webkit-scrollbar-track { background: var(--darkerblue-az); }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--orange);
+  background: var(--orange-az);
   border-radius: 10px;
 }
 
@@ -206,13 +211,13 @@ body.active { overflow-y: hidden; }
   transition: var(--transition-1);
 }
 
-.btn-primary { background: var(--orange); }
+.btn-primary { background: var(--orange-az); }
 
 .btn-primary:is(:hover, :focus) { background: var(--raisin-black-1); }
 
 .btn-secondary {
   background: var(--white);
-  color: var(--orange);
+  color: var(--orange-az);
 }
 
 .btn-secondary:is(:hover, :focus) {
@@ -220,7 +225,7 @@ body.active { overflow-y: hidden; }
   color: var(--white);
 }
 
-.btn-link:is(:hover, :focus) { color: var(--orange); }
+.btn-link:is(:hover, :focus) { color: var(--orange-az); }
 
 .has-scrollbar::-webkit-scrollbar { height: 6px; }
 
@@ -241,7 +246,7 @@ body.active { overflow-y: hidden; }
   transform: translateX(-50%);
   height: 5px;
   width: 120px;
-  background: var(--orange);
+  background: var(--orange-az);
   border-radius: 0 0 5px 5px;
 }
 
@@ -315,7 +320,7 @@ body.active { overflow-y: hidden; }
 }
 
 .nav-close-btn {
-  color: var(--orange);
+  color: var(--orange-az);
   font-size: 25px;
   padding: 10px;
   transform: translateX(15px);
@@ -337,7 +342,7 @@ body.active { overflow-y: hidden; }
   transition: 0.15s ease-in-out;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--orange); }
+.navbar-link:is(:hover, :focus) { color: var(--orange-az); }
 
 .nav-social-list {
   display: flex;
@@ -347,7 +352,7 @@ body.active { overflow-y: hidden; }
 }
 
 .social-link {
-  color: var(--orange);
+  color: var(--orange-az);
   font-size: 18px;
 }
 
@@ -374,7 +379,7 @@ body.active { overflow-y: hidden; }
 \*-----------------------------------*/
 
 .hero {
-  background: url("../images/hero-banner.jpg") no-repeat;
+  background: url("../images/pexels-alena-darmel-7862491.jpg") no-repeat;
   background-size: cover;
   background-position: top center;
   margin-top: 90px;
@@ -445,7 +450,7 @@ body.active { overflow-y: hidden; }
 }
 
 .about-subtitle {
-  color: var(--orange);
+  color: var(--orange-az);
   font-family: var(--ff-oswald);
   font-size: var(--fs-8);
   font-weight: var(--fw-500);
@@ -461,7 +466,7 @@ body.active { overflow-y: hidden; }
   margin-bottom: 20px;
 }
 
-.about-title strong { color: var(--orange); }
+.about-title strong { color: var(--orange-az); }
 
 .about-text,
 .about-bottom-text {
@@ -481,7 +486,7 @@ body.active { overflow-y: hidden; }
 }
 
 .about-bottom-text ion-icon {
-  color: var(--orange);
+  color: var(--orange-az);
   font-size: 25px;
   --ionicon-stroke-width: 45px;
 }
@@ -498,12 +503,13 @@ body.active { overflow-y: hidden; }
   padding: var(--section-padding) 0;
   color: var(--white);
   text-align: center;
+  margin-top: -100px;
 }
 
 .tournament-content { margin-bottom: 50px; }
 
 .tournament-subtitle {
-  color: var(--orange);
+  color: var(--orange-az);
   font-family: var(--ff-oswald);
   font-weight: var(--fw-500);
   text-transform: uppercase;
@@ -524,7 +530,9 @@ body.active { overflow-y: hidden; }
   margin-inline: auto;
 }
 
-.tournament-prize { margin-bottom: 50px; }
+.tournament-prize { 
+  margin-bottom: 50px; 
+}
 
 .tournament-prize-title {
   font-size: var(--fs-3);
@@ -532,7 +540,7 @@ body.active { overflow-y: hidden; }
 }
 
 .tournament-prize data {
-  background: var(--orange);
+  background: var(--orange-az);
   color: var(--raisin-black-1);
   font-family: var(--ff-oswald);
   font-size: var(--fs-4);
@@ -571,7 +579,7 @@ body.active { overflow-y: hidden; }
 .winner-card img { width: 100%; }
 
 .winner-card .card-title {
-  background: var(--orange);
+  background: var(--orange-az);
   width: max-content;
   margin-inline: auto;
   font-size: var(--fs-10);
@@ -589,6 +597,10 @@ body.active { overflow-y: hidden; }
 \*-----------------------------------*/
 
 .gallery { padding: var(--section-padding) 0; }
+
+.gallery ::-webkit-scrollbar {
+  color: #fff;
+}
 
 .gallery-list {
   display: flex;
@@ -637,11 +649,11 @@ body.active { overflow-y: hidden; }
 .team-member {
   position: relative;
   border-radius: 50%;
-  border: 3px solid var(--raisin-black-3);
+  border: 3px solid var(--lightblue-az);
   transition: var(--transition-1);
 }
 
-.team-member:is(:hover, :focus) { border-color: var(--orange); }
+.team-member:is(:hover, :focus) { border-color: var(--orange-az); }
 
 .team-member img { width: 100%; }
 
@@ -652,7 +664,7 @@ body.active { overflow-y: hidden; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--orange);
+  color: var(--orange-az);
   font-size: 50px;
   transition: var(--transition-1);
   opacity: 0;
@@ -667,7 +679,7 @@ body.active { overflow-y: hidden; }
 
 
 /*-----------------------------------*\
-  #GEARS
+  #SPONSORS
 \*-----------------------------------*/
 
 .gears { padding: var(--section-padding) 0; }
@@ -699,7 +711,7 @@ body.active { overflow-y: hidden; }
 .share,
 .card-time-wrapper {
   position: absolute;
-  color: var(--orange);
+  color: var(--orange-az);
 }
 
 .share {
@@ -715,7 +727,7 @@ body.active { overflow-y: hidden; }
   transition: var(--transition-1);
 }
 
-.share:is(:hover, :focus) { border-color: var(--orange); }
+.share:is(:hover, :focus) { border-color: var(--orange-az); }
 
 .card-time-wrapper {
   top: 2%;
@@ -780,13 +792,13 @@ body.active { overflow-y: hidden; }
   --polygon-1: polygon(75% 0, 100% 25%, 100% 100%, 25% 100%, 0 75%, 0 0);
 
   background: var(--raisin-black-1);
-  color: var(--orange);
+  color: var(--orange-az);
 }
 
 .gears-card .card-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .gears-card .card-btn:is(:hover, :focus) {
-  background: var(--orange);
+  background: var(--orange-az);
   color: var(--white);
 }
 
@@ -801,7 +813,7 @@ body.active { overflow-y: hidden; }
 .newsletter { padding: var(--section-padding) 0 120px; }
 
 .newsletter-card {
-  background: url("../images/newsletter-bg.jpg") no-repeat;
+  background: url("../images/newsletter-bg2.png") no-repeat;
   background-size: cover;
   background-position: center;
   padding: 50px 25px;
@@ -901,7 +913,7 @@ body.active { overflow-y: hidden; }
   transition: var(--transition-1);
 }
 
-.footer-menu-link:is(:hover, :focus) { color: var(--orange); }
+.footer-menu-link:is(:hover, :focus) { color: var(--orange-az); }
 
 .footer-input-wrapper {
   position: relative;
@@ -934,7 +946,7 @@ body.active { overflow-y: hidden; }
 
 .footer-input-wrapper .btn-primary:is(:hover, :focus) {
   background: var(--white);
-  color: var(--orange);
+  color: var(--orange-az);
 }
 
 .quicklink-list {
@@ -957,7 +969,7 @@ body.active { overflow-y: hidden; }
   transition: var(--transition-1);
 }
 
-.quicklink-item:is(:hover, :focus) { color: var(--orange); }
+.quicklink-item:is(:hover, :focus) { color: var(--orange-az); }
 
 .footer-social-list {
   display: flex;
@@ -978,7 +990,7 @@ body.active { overflow-y: hidden; }
   transition: var(--transition-1);
 }
 
-.footer-social-link:is(:hover, :focus) { color: var(--orange); }
+.footer-social-link:is(:hover, :focus) { color: var(--orange-az); }
 
 .footer-bottom {
   padding: 25px 0;
@@ -997,7 +1009,7 @@ body.active { overflow-y: hidden; }
 
 .copyright a {
   display: inline-block;
-  color: var(--orange);
+  color: var(--orange-az);
 }
 
 .footer-bottom-img img {
@@ -1035,7 +1047,7 @@ body.active { overflow-y: hidden; }
 
 .go-top:is(:hover, :focus) {
   background: var(--white);
-  color: var(--orange);
+  color: var(--orange-az);
 }
 
 
@@ -1316,6 +1328,9 @@ body.active { overflow-y: hidden; }
     margin-bottom: 0;
   }
 
+  .newsletter-title{
+    font-family: 'Quicksand', sans-serif;
+  }
 
 
   /**
@@ -1443,7 +1458,7 @@ body.active { overflow-y: hidden; }
 
   .navbar-link:is(:hover, :focus)::after {
     background: var(--raisin-black-2);
-    border-color: var(--orange);
+    border-color: var(--orange-az);
   }
 
   .header-actions {
@@ -1461,7 +1476,7 @@ body.active { overflow-y: hidden; }
 
   .search ion-icon { --ionicon-stroke-width: 70px; }
 
-  .header-actions .search:is(:hover, :focus) { color: var(--orange); }
+  .header-actions .search:is(:hover, :focus) { color: var(--orange-az); }
 
   .btn-sign_in {
     position: relative;
@@ -1476,7 +1491,7 @@ body.active { overflow-y: hidden; }
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 5px;
-    border-right: 5px solid var(--orange);
+    border-right: 5px solid var(--orange-az);
     box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.2);
     margin-left: 15px;
     transition: var(--transition-1);
@@ -1495,7 +1510,7 @@ body.active { overflow-y: hidden; }
                 inset 0 3px 7px 0 hsla(335, 53%, 14%, 0.4);
   }
 
-  .btn-sign_in:is(:hover, :focus) { color: var(--orange); }
+  .btn-sign_in:is(:hover, :focus) { color: var(--orange-az); }
 
   .btn-sign_in .icon-box {
     font-size: 18px;
